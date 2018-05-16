@@ -1,0 +1,319 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif; /*source sans pro es la correcta pero no se ponerlo*/
+	background-color: #FAFCFC;
+}
+
+header{
+	color: white; 
+	background-color: darkRed; 
+	margin: 0px;
+	height: 60px;
+	padding: 10px;
+	padding-left: 60px;
+}
+
+.botones{
+	color: white;
+	position: absolute;
+	right: 70px;
+	top: 30px;
+
+}
+
+/*--------------BARRA DE NAVEGACION -------------*/
+.navegacion{
+	background-color: #E4E2E2;
+	height: 30px;
+
+	
+}
+	.algunosenlaces ul{
+		float: left;
+		list-style: none;
+		text-align: center;
+		margin: 5px;
+
+
+	}
+	.algunosenlaces >ul >li{
+		float: left;
+		padding-left: 90px;
+	}
+
+	.algunosenlaces li a {
+	    display: block;
+	    color: black;
+	    text-align: center;
+	    text-decoration: none;
+	}
+
+	.algunosenlaces >ul >li a:hover{
+		color: #FFFFFF;
+		background-color: grey;
+	}
+
+
+	.otrosenlaces ul{
+		color: black;
+		list-style: none;
+		float: right;
+		margin: 10px;
+
+	}
+	.otrosenlaces >ul >li{
+		float: right;
+		padding-right: 30px;
+
+	}
+	.otrosenlaces li a {
+	    display: block;
+	    color: black;
+	    text-align: center;
+	    text-decoration: none;
+	    font-weight: bold;
+	}
+
+	.otrosenlaces >ul >li a:hover{
+		color: #FFFFFF;
+		background-color: grey;
+	}
+
+/*------------------------------------*/
+
+section > h1{
+	clear: both;
+	font-size: 45px;
+	color: grey;
+	padding-left: 40px
+
+	
+}
+/*-----------COLUMNA IZQUIERDA---------*/
+.col_izq{
+	float: left;
+	width: 800px;
+	padding-left: 40px;
+}
+
+/*----------COLUMNA DERECHA----------*/
+.col_der{
+	float:right;
+	width: 400px;
+	font-style: italic;
+}
+
+.UGRcifras{
+	padding:10px;
+	width: 90%;
+	background-color: #E4E2E2;
+	color: #484848;
+}
+
+.UGRcifras a{
+	color: black;
+    text-decoration: none;
+    font-style: italic;
+    padding-left: 240px;
+}
+
+.ver img{
+	float: left;
+	margin: 15px;
+}
+.ver h3{
+	color: darkRed;
+}
+.ver .desc p{
+	color: #656464;
+}
+
+
+/*-------ARTICULOS---------*/
+
+.inicio p{
+	font-size: x-large;
+	color: grey;
+}
+
+.articulos:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.articulos img{
+	float: left;
+	margin: 15px;
+}
+
+.articulos h2{
+	padding-top:20px;
+	color: darkRed;
+
+}
+
+.articulos p{
+	color: #656464;
+	font-style: italic;
+	font-size: 105%;
+}
+
+
+.articulos ul{
+	padding-left: 230px;
+	margin-bottom: 20px;
+}
+
+.articulos ul .columna1{
+	float:left;
+}
+
+.articulos ul .columna2{
+	float:right;
+	padding-right: 100px;
+
+}
+
+.articulos li a {
+	
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 110%;
+}
+
+	.entorno:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+
+	.gobierno:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+
+	.noticias:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+
+/*---------------------------*/
+
+/*-------------OTROS DATOS ANTES DEL FOOTER-----------*/
+.otrosdatos{
+	clear:both;
+	padding-left: 60px;
+	background-color: #D8D8D8;
+	height: 375px;
+	text-decoration: none;
+
+}
+
+.otrosdatos a{
+	text-decoration: none;
+	color: #656464;
+}
+
+.otrosdatos ul{
+	margin-top: 50px;
+	list-style: none;
+}
+
+.otrosdatos li{
+	font-style: italic;
+}
+.otrosdatos #titulo{
+	color: darkRed;
+	font-weight: bold;
+}
+
+.otrosdatos .col_1{
+	float: left;
+}
+
+.otrosdatos .col_2{
+	float: right;
+	width:  600px;
+}
+
+.otrosdatos .subcol_1{
+	float:left;
+}
+
+.otrosdatos .subcol_2{
+	float:right;
+}
+.otrosdatos .col_1 .col_3{
+	float: left;
+}
+
+.otrosdatos .col_1 .col_4{
+	float: right;
+}
+
+.otrosdatos .subcol_3{
+	float:left;
+}
+
+.otrosdatos .subcol_4{
+	float:right;
+	width: 200px;
+	margin: 10px;
+}
+.otrosdatos .subcol_4 >ul >li{
+	margin: 10px;
+	display: block;
+	background-color: #C8C8C8;
+	text-align: center;
+	height: 25px;
+	padding-top: 5px;
+}
+.otrosdatos .col_2 .col_5{
+	float: left;
+}
+
+.otrosdatos .col_2 .col_6{
+	float: right;
+}
+
+
+/*------------------FOOTER--------------*/
+footer{
+	clear:both;
+	color: white;
+	background-color: darkRed;
+	height: 100px;
+	color: white;
+    font-style: italic;
+}
+
+.texto{
+	float: right;
+	padding: 20px;
+	margin-right: 550px;
+}
+footer a{
+
+	color: white;
+    font-style: italic;
+    margin-left: 20px;
+    text-decoration: none;
+
+
+}
+
+footer p{
+
+	color: white;
+    font-style: italic;
+    font-size: small;
+
+}
+footer img{
+	float: left;
+	padding:10px;
+	margin-left: 100px;
+}
