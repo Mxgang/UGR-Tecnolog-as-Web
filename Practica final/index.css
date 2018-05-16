@@ -1,0 +1,581 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif; /*source sans pro es la correcta pero no se ponerlo*/
+	background-color: #FAFCFC;
+}
+
+header{
+	color: white; 
+	background-color: #95AFDC; 
+	margin: 0px;
+	height: 120px;
+	padding: 10px;
+	padding-left: 60px;
+}
+
+header h1{
+	text-align: left;
+	font-size: 200%;
+}
+header p{
+	text-align: left;
+	padding-bottom: 100px;
+}
+header img{
+	float: left;
+	padding-right: 20px;
+
+}
+
+.botones{
+
+	color: white;
+	position: relative;
+	left: 1100px;
+	bottom: 460px;
+
+}
+
+/*-----------DISEÑO RESPONSIVE 480px---------*/
+@media all and (max-width: 1080px){
+    header{
+        height: auto;
+    }
+    footer{
+    	height: auto;
+    }
+    .articulos div{
+    	margin-left: 50px;
+    }
+    .botones{
+		position: relative;
+		left: 700px;
+		bottom: 540px;
+    }
+    img{
+    	display:none;
+    }
+    .miembros table{
+    	margin-left: 200px;
+
+    }
+    .miembros form{
+    	margin-left: 50px;
+    }
+}
+
+/*-----------COLUMNA IZQUIERDA---------*/
+.col_izq{
+	float: left;
+	width: 220px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+
+nav{
+	background-color: #E4E2E2;
+	height: 700px; 
+
+
+}
+
+	.algunosenlaces ul{
+		float: left;
+		list-style: none;
+
+	}
+	.algunosenlaces >ul >li{
+		padding-top: 10px;
+	}
+
+	.algunosenlaces li a {
+	    display: block;
+	    color: black;
+	    text-decoration: none;
+	}
+
+	.algunosenlaces >ul >li a:hover{
+		color: #FFFFFF;
+		background-color: #6591DC;
+	}
+
+
+/*-----------COLUMNA IZQUIERDA USUARIOS---------*/
+
+	.usuarios{
+
+	}
+	.usuarios a {
+	    display: block;
+	    color: black;
+	    text-decoration: none;
+	}
+	.usuarios ul{
+		list-style: none;
+	}
+	.usuarios li a {
+	    display: block;
+	    color: black;
+	    text-decoration: none;
+	}
+	.usuarios >ul >li a:hover{
+		color: #FFFFFF;
+		background-color: #6591DC;
+	}
+
+/*-----------COLUMNA IZQUIERDA ADMINISTRADOR---------*/
+
+	.admin{
+		
+		top: 100px;
+
+	}
+	.admin a {
+	    display: block;
+	    color: black;
+	    text-decoration: none;
+	}
+	.admin ul{
+		list-style: none;
+	}
+	.admin li a {
+	    display: block;
+	    color: black;
+	    text-decoration: none;
+	}
+	.admin >ul >li a:hover{
+		color: #FFFFFF;
+		background-color: #6591DC;
+	}
+
+/*-----------COLUMNA DERECHA --------*/
+.col_der{
+	float: right;
+	width: 1000px;
+	padding-top: 10px;
+}
+
+/*-----------COLUMNA DERECHA ERROR PERMISOS--------*/
+.error{
+	float: right;
+	margin-right: 200px;
+}
+/*-----------COLUMNA DERECHA PAGINA INICIO --------*/
+.infogeneral img{
+	float: right;
+	padding-top: 20px;
+}
+
+.realidad_aumentada:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+.realidad_virtual:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+/*-----------COLUMNA DERECHA MIEMBROS---------*/
+
+.miembros img{
+	float: left;
+
+}
+
+.miembros div{
+	padding-right: 50px;
+	background-color: #E9E7E7;
+	margin-top: 20px;
+}
+
+.miembros ul{
+	float: left;
+	list-style: none;
+	padding-top: 20px;
+
+}
+
+.miembro1:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+.miembro2:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+table:after{
+	content:"";
+		display:block;
+		clear:both;
+}
+/*-----------COLUMNA DERECHA AÑADIR PUBLICACIONES --*/
+.aniadir_publicacion div{
+	padding-right: 50px;
+	background-color: #E9E7E7;
+	margin-top: 20px;
+}
+
+.aniadir_publicacion ul{
+	float: left;
+	list-style: none;
+	
+
+}
+
+.aniadir_publicacion a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.aniadir_publicacion li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.aniadir_publicacion div >ul >li a:hover{
+	color: #FFFFFF;
+	background-color: #6591DC;
+}
+
+.articulo:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+.libro:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+.capLibro:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+.conferencia:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+
+/*-----------COLUMNA DERECHA PUBLICACIONES---------*/
+
+.publicaciones div{
+	padding-right: 50px;
+	background-color: #E9E7E7;
+	margin-top: 20px;
+}
+
+.publicaciones ul{
+	float: left;
+	list-style: none;
+	
+
+}
+
+.publicaciones a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.publicaciones li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.publicaciones div >ul >li a:hover{
+	color: #FFFFFF;
+	background-color: #6591DC;
+}
+
+.publicaciones1:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+.publicaciones2:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+.publicaciones3:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+.publicaciones4:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+/*-----------COLUMNA DERECHA PUBLICACIONES-ARTICULOS---------*/
+
+.articulos div{
+	padding-right: 50px;
+	background-color: #E9E7E7;
+	margin-top: 20px;
+}
+
+.articulos ul{
+	float: left;
+	list-style: none;
+	padding-top: 20px;
+
+}
+
+.articulo1:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+/*-----------COLUMNA DERECHA PUBLICACIONES-LIBROS---------*/
+
+.libros div{
+	padding-right: 50px;
+	background-color: #E9E7E7;
+	margin-top: 20px;
+}
+
+.libros ul{
+	float: left;
+	list-style: none;
+	padding-top: 20px;
+
+}
+
+.libro1:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+/*-----------COLUMNA DERECHA PUBLICACIONES-CAPITULOS---------*/
+
+.capitulos div{
+	padding-right: 50px;
+	background-color: #E9E7E7;
+	margin-top: 20px;
+}
+
+.capitulos ul{
+	float: left;
+	list-style: none;
+	padding-top: 20px;
+
+}
+
+.capitulo1:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+/*-----------COLUMNA DERECHA PUBLICACIONES-CONFERENCIAS---------*/
+
+.conferencias div{
+	padding-right: 50px;
+	background-color: #E9E7E7;
+	margin-top: 20px;
+}
+
+.conferencias ul{
+	float: left;
+	list-style: none;
+	padding-top: 20px;
+
+}
+
+.conferencia1:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+
+
+/*-----------COLUMNA DERECHA PROYECTOS---------*/
+
+.proyectos div{
+	padding-right: 50px;
+	background-color: #E9E7E7;
+	margin-top: 20px;
+}
+
+.proyectos ul{
+	float: left;
+	list-style: none;
+	padding-top: 20px;
+
+}
+
+.proyecto1:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+.proyecto2:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+/*-----------COLUMNA DERECHA AÑADIR USUARIOS---------*/
+
+.frm_user{
+	
+}
+
+
+/*-----------COLUMNA DERECHA EDITAR USUARIOS---------*/
+
+.editar_usuarios div{
+	padding-right: 50px;
+	background-color: #E9E7E7;
+	margin-top: 20px;
+}
+
+.editar_usuarios ul{
+	float: left;
+	list-style: none;
+	
+
+}
+
+.editar_usuarios a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.editar_usuarios li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.editar_usuarios div >ul >li a:hover{
+	color: #FFFFFF;
+	background-color: #6591DC;
+}
+
+.añadir:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+.editar:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+.borrar:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+/*-----------COLUMNA DERECHA CONTACTO---------*/
+
+.contacto div{
+	padding-right: 50px;
+	background-color: #E9E7E7;
+	margin-top: 20px;
+}
+
+.contacto ul{
+	float: left;
+	list-style: none;
+	padding-top: 20px;
+
+}
+
+.contacto1:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+.contacto2:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+/*-----------COLUMNA DERECHA TÉRMINOS---------*/
+
+.terminos div{
+	padding-right: 50px;
+	background-color: #E9E7E7;
+	margin-top: 20px;
+}
+
+.terminos ul{
+	float: left;
+	list-style: none;
+	padding-top: 20px;
+
+}
+
+.terminos:after{
+		content:"";
+		display:block;
+		clear:both;
+}
+
+/*------------------FOOTER--------------*/
+footer{
+	clear:both;
+	color: white;
+	background-color: #6591DC;
+	height: 150px;
+	color: white;
+}
+
+.texto{
+	
+	text-align: center;
+	color: white;
+    text-decoration: none;
+    padding-top: 30px;
+
+
+}
+footer a{
+
+	color: white;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+
+	footer a:hover{
+		color: #FFFFFF;
+		background-color: #97B1DE;
+	}
+
+footer img{
+	float: left;
+	padding:10px;
+	margin-left: 30px;
+	
+}

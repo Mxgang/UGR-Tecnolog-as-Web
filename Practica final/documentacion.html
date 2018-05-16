@@ -1,0 +1,157 @@
+<div id="element">
+<h1>Manual de Usuario</h1>
+<p>GIRARV por sus siglas, Grupo de Investigación de Realidad Aumentada y
+Realidad Virtual, es una página web de investigación para la asignatura
+Tecnologías Web, con una estructura básica.</p>
+<b>Página de Inicio</b><br/>
+<p>En la página principal tenemos una breve introducción sobre lo que es
+GIRARV y qué es la Realidad Aumentada y Realidad Virtual
+Podemos acceder desde la columna de la izquierda a ver los miembros,
+publicaciones y proyectos que haya hasta el momento.
+En el header podemos iniciar sesión y en el footer podemos encontrar
+distintas páginas de información.</p>
+<b>Miembros, proyectos y publicaciones</b><br/>
+<p>Estas páginas son meramente informativas, donde podemos ver los
+distintos miembros que hay registrados en la página, además de los
+proyectos y publicaciones que se hayan escrito.
+Hay implementado en PHP un buscador, que te ordena los tipos de publicaciones que hay por autor, fecha o palabras clave<p>
+<b>Inicio de sesión como usuario</b><br/>
+<p>Iniciando sesión como usuario tendremos una nueva funcionalidad en la
+columna de la izquierda:</p>
+<ul>
+	<li>Añadir publicación: aquí podemos añadir todos los tipos de publicaciones que hay.</li>
+	<li>Editar publicación: en esta opción se puede modificar y borrar publicaciones</li>
+	<li>Añadir proyecto: aquí se pueden añadir los proyectos</li>
+	<li>Editar proyecto: en est aopción se puede modificar y borrar proyectos.</li>
+</ul>
+<b>Inicio de sesión como administrador</b><br/>
+Siendo el administrador, tendremos la misma funcionalidad de usuario a la
+hora de añadir, editar y borrar proyectos y publicaciones, pero además tenemos más
+opciones:
+<ul>
+	<li>Editar usuarios: aquí podemos añadir, editar y borrar usuarios.</li>
+	<li>Ver log del sistema: veremos cada modificación en la base de datos</li>
+	<li>Hacer backup: hacer una copia de seguridad del sistema. Se da la información que se pide y te descarga la BBDD.</li>
+	<li>Restaurar backup: restaurar dicha copia de seguridad. Simplemente se selecciona el archivo .sql y se da la información que pide.</li>
+</ul>
+<h1>Diseño E-R de la BBDD y descripción de las tablas</h1>
+<p>La base de datos está dividida en dos zonas, una donde se guardan
+los usuarios, y otra donde se almacenan las distintas publicaciones
+(artículos, libros, capítulos de libros y conferencias).</p>
+
+<img src="esquema.png" alt="esq" height="500%" width="50%"/><br/>
+
+<h1>Descripción de las tablas:</h1>
+<b>usuarios</b>
+<ul>
+	<li><u>id</u></li>
+	<li>name</li>
+	<li>password</li>
+	<li>especialidad</li>
+	<li>direccion</li>
+	<li>hobbies</li>
+</ul>
+<b>articulos</b>
+<ul>
+	<li>idPost</li>
+	<li><u>DOI</u></li>
+	<li>autores</li>
+	<li>fechaPublicacion</li>
+	<li>resumen</li>
+	<li>nombreRevista</li>
+	<li>volumen</li>
+	<li>paginas</li>
+	<li>palabrasClave</li>
+	<li>URL</li>
+</ul>
+<b>libros</b>
+<ul>
+	<li>idPost</li>
+	<li>DOI</li>
+	<li>autores</li>
+	<li>fechaPublicacion</li>
+	<li>tituloTrabajo</li>
+	<li>editorial</li>
+	<li>editor</li>
+	<li><u>ISBN</u></li>
+	<li>palabrasClave</li>
+	<li>URL</li>
+</ul>
+<b>capLibros</b>
+<ul>
+	<li>idPost</li>
+	<li><u>DOI</u></li>
+	<li>tituloTrabajo</li>
+	<li>autores</li>
+	<li>fechaPublicacion</li>
+	<li>resumen</li>
+	<li>tituloLibro</li>
+	<li>editorial</li>
+	<li>ISBN</li>
+	<li>pagCap</li>
+	<li>palabrasClave</li>
+</ul>
+<b>conferencias</b>
+<ul>
+	<li>idPost</li>
+	<li><u>DOI</u></li>
+	<li>tituloTrabajo</li>
+	<li>autores</li>
+	<li>fechaPublicacion</li>
+	<li>resumen</li>
+	<li>nombreConf</li>
+	<li>lugar</li>
+	<li>reseñaPub</li>
+	<li>palabrasClave</li>
+	<li>URL</li>
+</ul>
+<h1>Elementos de desarrollo</h1>
+<b>Maquetación</b><br/>
+<p>La página tiene una maquetación simple que se divide en:</p>
+<ul>
+	<li>Header</li>
+	<li>Columna izquierda (div con float: left)</li>
+	<li>Columna derecha (div con float: right)</li>
+	<li>Footer</li>
+</ul>
+<p>El header, la columna izquierda y footer son comunes en todas las páginas
+y nunca cambian, salvo en el inicio de sesión como usuario o
+administrador, donde en la columna de la izquierda se añaden nueva
+funcionalidades.</p>
+
+<p>La columna derecha va cambiando dependiendo de la página que nos
+encontremos y sigue una estructura de división con más div dependiendo
+de la página que sea.</p>
+
+<b>Tecnología Javascript</b><br/>
+
+<p>Se ha implementado un pequeño script para que antes de hacer una
+petición al servidor se compruebe que todos los datos están correctamente
+completados.
+Si hay un campo sin rellenar te marcan los que están vacíos cambiando el color de la casilla a color rojo.
+También hay un caso especial al añadir proyectos, que si pones la fecha de comienzo después de la fecha de finte salta un aviso y marca las casillas de las fechas en amarillo</p>
+
+<b>Diseño adaptable</b><br/>
+<p>Para el diseño adaptable hemos decidido adaptarlo para dispositivos de
+1024px de ancho hasta teléfonos móviles de 480px de ancho con 1 solo
+diseño responsivo.
+Para lograr esto, la parte más ancha que es la columna derecha, la hemos puesto
+debajo de la columna de la izquierda para que se pueda adaptar a distintas
+pantallas.
+Hemos eliminado las imágenes que hay en la página para ahorrar espacio
+tanto visual como de memoria, también en las páginas informativas hemos
+juntado el texto para que se pueda leer bien.</p>
+
+<b>Tecnología AJAX</b><br/>
+<p>Se ha implementado dos pequeños scripts con AJAX en la documentación.
+Cuando se da click en el enlace de documentación, aparece encima del header
+esta documentación, que está escrita en una página HTML.
+En el botón "Ocultar Documentación" al darle se oculta la documentación si está mostrada</p>
+
+<b>Otros elementos</b><br/>
+<p>Se han puesto otros elementos en la página web:</p>
+	<ul>
+		<li>Saneamiento de datos</li>
+		<li>Evitar que usuarios o invitados accedan a páginas no autorizadas (log, backup, editar usuarios, etc).</li>
+	</ul>
+</div>
